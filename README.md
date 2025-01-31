@@ -7,4 +7,4 @@ usable, i.e. branching, merge conflicts, commit, and push
 ## TODO
 
 - [ ] Move `init` and write tests for everything (wow I actually already have tech debt)
-
+- [ ] Add a build file LOL

@@ -1,4 +1,5 @@
-namespace Init {
+class Init {
+public:
 	/**
 	 * Initialize and create the description file
 	 */

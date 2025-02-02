@@ -1,0 +1,4 @@
+[core]
+	filemode = true
+	bare = false
+	logallrefupdates = true

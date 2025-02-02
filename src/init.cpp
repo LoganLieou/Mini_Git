@@ -6,12 +6,16 @@
 #include <openssl/sha.h>
 
 void Init::Main() {
-	if (!std::filesystem::create_directory(".mgit")) {
+	if (std::filesystem::exists(".mgit")) {
+		std::cerr << ".mgit already exists\n";
+		exit(0);
+	}
+	else if (!std::filesystem::create_directory(".mgit")) {
 		std::cerr << "ERROR: Failed to create .mgit directory\n";
 		exit(1);
 	}
 	else {
-		std::cout << "Successfully created .mgit folder\n";
+		std::cout << "Successfully initialized .mgit folder\n";
 	}
 	this->InitBranches();
 	this->InitConfig();

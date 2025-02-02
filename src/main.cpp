@@ -81,7 +81,7 @@ void init() {
 	// create the rest of the things
 	init_config();
 	init_description();
-	init_HEAD();
+	// don't do this yet init_HEAD();
 	// TODO define hooks init_hooks();
 	init_info();
 	init_objects();
